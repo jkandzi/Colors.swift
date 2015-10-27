@@ -1,0 +1,25 @@
+{
+  "name": "Colors.swift",
+  "version": "0.1.0",
+  "summary": "A short description of Colors.swift.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Colors.swift",
+  "license": "MIT",
+  "authors": {
+    "Justus Kandzi": "justus.kandzi@kitchenstories.de"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Colors.swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Colors.swift": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
