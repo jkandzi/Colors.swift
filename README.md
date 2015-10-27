@@ -1,15 +1,77 @@
 # Colors.swift
 
-[![CI Status](http://img.shields.io/travis/Justus Kandzi/Colors.swift.svg?style=flat)](https://travis-ci.org/Justus Kandzi/Colors.swift)
-[![Version](https://img.shields.io/cocoapods/v/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
-[![License](https://img.shields.io/cocoapods/l/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
-[![Platform](https://img.shields.io/cocoapods/p/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
+![screen shot](https://raw.githubusercontent.com/jkandzi/Colors.swift/master/web/ScreenShot.png)
+
+Add some color to your terminal.
+
+Inspired by [colors.js](https://github.com/marak/colors.js/).
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Set foreground color:
 
-## Requirements
+```
+print("Red".paint(.Red))
+```
+
+Set background color:
+
+```
+print("Red".paint(.RedBackground))
+```
+
+Apply style:
+
+```
+print("Bold".style(.Bold))
+```
+
+Chain colors and styles:
+
+```
+print("Nice".paint(.Green).paint(.RedBackground).style(.Bold))
+```
+
+Custom paint operator:
+
+```
+print("Red" >-- .Red)
+print("Red" >-- .RedBackground >-- .Blue)
+```
+
+Available colors:
+
+* `.Black`
+* `.Red`
+* `.Green`
+* `.Yellow`
+* `.Blue`
+* `.Magenta`
+* `.Cyan`
+* `.White`
+* `.Gray`
+
+Available background colors:
+
+* `.BlackBackground`
+* `.RedBackground`
+* `.GreenBackground`
+* `.YellowBackground`
+* `.BlueBackground`
+* `.MagentaBackground`
+* `.CyanBackground`
+* `.WhiteBackground`
+* `.GrayBackground`
+
+Available styles:
+
+* `.Bold`
+* `.Dim`
+* `.Italic`
+* `.Underline`
+* `.Inverse`
+* `.Hidden`
+* `.Strikethrough`
 
 ## Installation
 
