@@ -1,11 +1,3 @@
-#
-# Be sure to run `pod lib lint Colors.swift.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "Colors.swift"
   s.version          = "0.1.0"
@@ -20,9 +12,9 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Justus Kandzi" => "justus.kandzi@gmail.com" }
   s.source           = { :git => "https://github.com/jkandzi/Colors.swift.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/justuskandzi'
+  s.social_media_url = 'https://twitter.com/justuskandzi'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :osx
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -30,7 +22,4 @@ Pod::Spec.new do |s|
     'Colors.swift' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
