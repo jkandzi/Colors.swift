@@ -11,5 +11,8 @@ import XCTest
 
 class Colors_swiftTests: XCTestCase {
     
+    func testForegroundColor() {
+
+    }
     
 }

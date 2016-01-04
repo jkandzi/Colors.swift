@@ -22,7 +22,7 @@ print("Red".paint(.Red))
 Set background color:
 
 ```swift
-print("Red".paint(.RedBackground))
+print("Red".paint(.OnRed))
 ```
 
 Apply style:
@@ -34,14 +34,10 @@ print("Bold".style(.Bold))
 Chain colors and styles:
 
 ```swift
-print("Nice".paint(.Green).paint(.RedBackground).style(.Bold))
-```
+print("Nice".paint(.Green).paint(.OnRed).style(.Bold))
 
-Custom paint operator (*its a brush*):
-
-```swift
-print("Red" >-- .Red)
-print("Red" >-- .RedBackground >-- .Blue)
+print("Nice".paint(.Green, .OnRed))
+print("Nice".paint(.Green, .OnRed, .Bold))
 ```
 
 Available colors:
@@ -58,15 +54,15 @@ Available colors:
 
 Available background colors:
 
-* `.BlackBackground`
-* `.RedBackground`
-* `.GreenBackground`
-* `.YellowBackground`
-* `.BlueBackground`
-* `.MagentaBackground`
-* `.CyanBackground`
-* `.WhiteBackground`
-* `.GrayBackground`
+* `.OnBlack`
+* `.OnRed`
+* `.OnGreen`
+* `.OnYellow`
+* `.OnBlue`
+* `.OnMagenta`
+* `.OnCyan`
+* `.OnWhite`
+* `.OnGray`
 
 Available styles:
 

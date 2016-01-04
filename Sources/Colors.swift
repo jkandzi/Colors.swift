@@ -35,9 +35,9 @@ private let colorsSupported: Bool = {
     }()
 
 
-extension String {
+public extension String {
     
-    public enum Color: Int {
+    public enum ColorsColor: Int {
         case Black = 30
         case Red
         case Green
@@ -49,19 +49,19 @@ extension String {
         case Gray = 90
     }
     
-    public enum BackgroundColor: Int {
-        case BlackBackground = 40
-        case RedBackground
-        case GreenBackground
-        case YellowBackground
-        case BlueBackground
-        case MagentaBackground
-        case CyanBackground
-        case WhiteBackground
-        case GrayBackground = 90
+    public enum ColorsBackground: Int {
+        case OnBlack = 40
+        case OnRed
+        case OnGreen
+        case OnYellow
+        case OnBlue
+        case OnMagenta
+        case OnCyan
+        case OnWhite
+        case OnGray = 90
     }
     
-    public enum Style: Int {
+    public enum ColorsStyle: Int {
         case Bold = 1
         case Dim
         case Italic
@@ -71,15 +71,23 @@ extension String {
         case Strikethrough
     }
     
-    public func paint(color: Color) -> String {
+    public func paint(color: ColorsColor) -> String {
         return applyCode((color.rawValue, 39))
     }
     
-    public func paint(color: BackgroundColor) -> String {
-        return applyCode((color.rawValue, 49))
+    public func paint(background: ColorsBackground) -> String {
+        return applyCode((background.rawValue, 49))
     }
     
-    public func style(style: Style) -> String {
+    public func paint(color: ColorsColor, _ background: ColorsBackground) -> String {
+        return paint(color).paint(background)
+    }
+    
+    public func paint(color: ColorsColor, _ background: ColorsBackground, _ style: ColorsStyle) -> String {
+        return paint(color).paint(background).style(style)
+    }
+    
+    public func style(style: ColorsStyle) -> String {
         if style == .Bold {
             return applyCode((style.rawValue, 22))
         }
@@ -94,21 +102,4 @@ extension String {
         }
         return "\u{001b}[\(code.start)m\(self)\u{001b}[\(code.end)m"
     }
-}
-
-// MARK: - Operator
-
-/// Operator
-///
-infix operator >-- { precedence 255 associativity left}
-func >-- (text: String, color: String.Color) -> String {
-    return text.paint(color)
-}
-
-func >-- (text: String, color: String.BackgroundColor) -> String {
-    return text.paint(color)
-}
-
-func >-- (text: String, style: String.Style) -> String {
-    return text.style(style)
 }
