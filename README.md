@@ -78,12 +78,43 @@ Available styles:
 
 ## Installation
 
-Colors.swift is available through [CocoaPods](http://cocoapods.org). To install
+### Cocoapods
+
+Progress.swift is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Colors.swift"
 ```
+
+### Carthage
+
+To integrate Colors.swift into your Xcode project using Carthage, specify it in your Cartfile:
+
+```
+github "jkandzi/Colors.swift"
+```
+
+Run `carthage update` to build the framework and drag the built `Progress.framework` into your Xcode project.
+
+### Swift Package Manager
+
+To install with the Swift Package Manager, add the following in your `Package.swift`:
+
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "MyProject",
+    dependencies: [
+        .Package(url: "https://github.com/jkandzi/Colors.swift", majorVersion: 0)
+    ]
+)
+```
+
+### Manual
+
+You can also copy the `Colors.swift` file into your Xcode project.
 
 ## Author
 
