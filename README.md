@@ -1,6 +1,6 @@
 # Colors.swift
 
-![screenshot](https://raw.githubusercontent.com/jkandzi/Colors.swift/master/web/ScreenShot.png)
+![screenshot](https://raw.githubusercontent.com/jkandzi/Colors.swift/master/screen-shot.png)
 
 Add some color to your terminal.
 

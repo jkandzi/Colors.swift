@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 private let colorsSupported: Bool = {
     if Process.arguments.contains("--no-color")
         || Process.arguments.contains("--color=false") {
