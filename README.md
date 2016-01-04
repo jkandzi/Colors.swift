@@ -1,4 +1,9 @@
 # Colors.swift
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM ready](https://img.shields.io/badge/SPM-ready-orange.svg)](https://www.swift.org)
+[![Version](https://img.shields.io/cocoapods/v/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
+[![License](https://img.shields.io/cocoapods/l/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
+[![Platform](https://img.shields.io/cocoapods/p/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
 
 ![screenshot](https://raw.githubusercontent.com/jkandzi/Colors.swift/master/screen-shot.png)
 
@@ -32,7 +37,7 @@ Chain colors and styles:
 print("Nice".paint(.Green).paint(.RedBackground).style(.Bold))
 ```
 
-Custom paint operator:
+Custom paint operator (*its a brush*):
 
 ```swift
 print("Red" >-- .Red)
