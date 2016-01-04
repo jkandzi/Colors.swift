@@ -1,4 +1,6 @@
 # Colors.swift
+
+[![Build Status](https://travis-ci.org/jkandzi/Colors.swift.svg?branch=master)](https://travis-ci.org/jkandzi/Colors.swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM ready](https://img.shields.io/badge/SPM-ready-orange.svg)](https://www.swift.org)
 [![Version](https://img.shields.io/cocoapods/v/Colors.swift.svg?style=flat)](http://cocoapods.org/pods/Colors.swift)
