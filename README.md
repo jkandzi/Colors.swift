@@ -78,7 +78,7 @@ Available styles:
 
 ## Installation
 
-### Cocoapods
+### CocoaPods
 
 Progress.swift is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
